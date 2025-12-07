@@ -36,6 +36,7 @@
           pkgs.python3Packages.hatchling
           pkgs.python3Packages.fastmcp
           pkgs.python3Packages.requests
+          pkgs.python3Packages.pytest
         ];
       };
     });

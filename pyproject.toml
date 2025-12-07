@@ -17,6 +17,18 @@ dependencies = [
   "requests>=2.32.0",
 ]
 
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.3",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+markers = [
+  "integration: runs nix shell to verify real package availability"
+]
+
 [project.scripts]
 mcp-omnienv-nix = "mcp_omnienv_nix.server:main"
 
